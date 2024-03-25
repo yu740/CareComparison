@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+body {
+    font-family: Meiryo;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    background-image: url("background.jpeg");
+    background-repeat: repeat-y;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo img {
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.header_menu {
+    display: flex;
+    padding: 10px 0;
+    margin-right: 20px;
+}
+
+.header_menu li {
+    text-align: center;
+    padding: 10px;
+    width: 180px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/*--------------------------------
+メインビジュアル
+---------------------------------*/
+.main_visual {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.main_visual_text {
+    position: absolute;
+    top: 54%;
+    left: 16%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    line-height: 2.0;
+    animation-name: fadeInAnime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#contents {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*--------------------------------
+セクション
+---------------------------------*/
+.section {
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+/*--------------------------------
+コンテンツ1
+---------------------------------*/
+.dev_a {
+    display: flex;
+    margin: 150px auto 100px auto;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.dev_a img {
+    width: 500px;
+    height: auto;
+}
+
+.dev_content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 50px;
+    margin: 0 0 0 20px;
+}
+
+.dev_content h1 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+.dev_content p {
+    margin: 10px 0;
+    line-height: 2.0;
+}
+
+/*--------------------------------
+CareCompanionを導入する3つのメリット
+---------------------------------*/
+.merit {
+    margin-bottom: 100px;
+}
+
+.merit_headline {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+}
+
+.merit_lineup {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.merit_dev {
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    filter: drop-shadow(30px 30px 70px rgba(0, 0, 0, 0.10));
+    margin: 0 30px;
+}
+
+.merit_dev h2 {
+    color: #ff1499;
+}
+
+.merit_dev img {
+    width: auto;
+    height: 180px;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+.merit_dev p {
+    text-align: left;
+    padding: 5px 20px;
+    line-height: 2.0;
+}
+
+/*--------------------------------
+本システムの主要機能
+---------------------------------*/
+.function {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.function_headline {
+    font-size: 36px;
+    margin: 50px auto;
+}
+
+.function_row img {
+    margin: 0 40px;
+    width: 250px;
+    height: auto;
+}
+
+.row2 {
+    margin: 20px auto;
+}
+
+.btn {
+    width: 400px;
+    height: 70px;
+    line-height: 70px;
+    margin: 10px auto;
+}
+
+.btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: #0BA29A;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+/*--------------------------------
+フッター
+---------------------------------*/
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu li {
+    margin: 0 80px;
+}
